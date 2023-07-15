@@ -3,17 +3,17 @@
 }
 
 body {
+  font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .navbar {
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(34, 34, 34, 0.65);
-  color: #FFFFFF;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: rgb(255, 255, 255);
 }
 
 .brand-title {
@@ -21,32 +21,31 @@ body {
   margin: 0.5rem;
 }
 
-.navbar-links {
-  height: 100%;
-}
-
 .navbar-links ul {
-  display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .navbar-links li {
   list-style: none;
+  transition: background-color 0.4s ease;
 }
 
 .navbar-links li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 1rem;
+  display: block;
+  cursor: pointer;
 }
 
 .navbar-links li:hover {
-  transform: translateY(-5px);
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
-.navbar-links li a:hover {
-  color: rgb(204, 32, 108);
+.navbar-links li:active {
+  background-color: rgba(50, 50, 50, 0.95);
 }
 
 .toggle-button {
@@ -57,21 +56,17 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
+  height: 20px;
 }
 
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 
-@media (max-width: 400px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+@media (max-width: 500px) {
   .toggle-button {
     display: flex;
   }
@@ -79,14 +74,18 @@ body {
     display: none;
     width: 100%;
   }
-  .navbar-links ul {
-    width: 100%;
+  .navbar {
     flex-direction: column;
+    align-items: flex-start;
   }
-  .navbar-links ul li {
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .narbar-links li {
     text-align: center;
   }
-  .navbar-links ul li a {
+  .navbar-links li a {
     padding: 0.5rem 1rem;
   }
   .navbar-links.active {
