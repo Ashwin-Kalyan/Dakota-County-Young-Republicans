@@ -1,0 +1,27 @@
+$box-color: rgba(30, 30, 30, .5);
+$border-color:  rgba(30, 30, 30, .2);
+
+.join {
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-box {
+    width: 40vh;
+    height: 25vh;
+    font-size: .85rem;
+    background: $box-color;
+    border: 3px solid $border-color;
+    border-radius: .5rem;
+    backdrop-filter: blur(20px);
+}
+
+h1 {
+    font-family: 'Times New Roman';
+    color: #FFF;
+    padding-bottom: 4vh;
+}
