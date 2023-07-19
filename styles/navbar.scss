@@ -22,31 +22,29 @@ $active-bg-color: rgba(50, 50, 50, .95);
     margin: .5rem;
 }
 
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-    transition: background-color .4s ease;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: $fg-color;
-    padding: 1rem;
-    display: block;
-    cursor: pointer;
-}
-
-.navbar-links li:hover {
-    background-color: $hover-bg-color;
-}
-
-.navbar-links li:active {
-    background-color: $active-bg-color;
+.navbar-links {
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    li {
+        list-style: none;
+        transition: background-color .4s ease;
+    }
+    a {
+        text-decoration: none;
+        color: $fg-color;
+        padding: 1rem;
+        display: block;
+        cursor: pointer;
+    }
+    li:hover {
+        background-color: $hover-bg-color;
+    }
+    li:active {
+        background-color: $active-bg-color;
+    }
 }
 
 .toggle-button {
@@ -58,13 +56,12 @@ $active-bg-color: rgba(50, 50, 50, .95);
     justify-content: space-between;
     width: 30px;
     height: 20px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: $fg-color;
-    border-radius: 10px;
+    .bar {
+        height: 3px;
+        width: 100%;
+        background-color: $fg-color;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -75,26 +72,22 @@ $active-bg-color: rgba(50, 50, 50, .95);
     .navbar-links {
         display: none;
         width: 100%;
+        ul {
+            flex-direction: column;
+            width: 100%;
+        }
+        li {
+            text-align: center;
+        }
+        a {
+            padding: .5rem 1rem;
+        }
     }
 
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .navbar-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .narbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-
     .navbar-links.active {
         display: flex;
     }

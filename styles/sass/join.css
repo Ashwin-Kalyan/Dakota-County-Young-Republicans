@@ -1,39 +1,36 @@
-.faculty {
+.join {
   height: 100vh;
   text-align: center;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.faculty-cards {
-  margin: 0.25rem;
-  height: 35vh;
+.join-box {
   width: 40vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
   background: rgba(30, 30, 30, 0.5);
   border: 3px solid rgba(30, 30, 30, 0.2);
+  border-radius: 0.5rem;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  border-radius: 0.5rem;
-  color: #FFF;
-  font-weight: 100;
   animation: transitionIn 2s;
   transition: transform 0.5s;
 }
-.faculty-cards:hover {
-  cursor: pointer;
-  transform: translateY(-10%);
+
+.now {
+  height: 50vh;
 }
 
-button a {
-  font-size: 1.5rem;
-  font-family: "Nunito", sans-serif;
+h1 {
+  font-family: "Times New Roman";
+  color: #FFF;
 }
 
 @keyframes transitionIn {
@@ -45,4 +42,4 @@ button a {
     opacity: 1;
     transform: rotateX(0);
   }
-}/*# sourceMappingURL=faculty-cards.css.map */
+}/*# sourceMappingURL=join.css.map */

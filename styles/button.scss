@@ -1,6 +1,11 @@
 $button-color: hsl(347, 100%, 54%);
 $clear: rgba(0, 0, 0, .01);
 
+@mixin lightUp($opacity, $blur) {
+    opacity: $opacity;
+    filter: blur($blur);
+}
+
 button {
     display: inline-block;
     cursor: pointer;
@@ -9,58 +14,19 @@ button {
     border-radius:4em;
     box-shadow: inset 0 0 .8em 0 $button-color, 0 0 .8em 0 $button-color;
     position: relative;
-}
-
-button a {
-    font-size: 2rem;
-    padding: .25em 1em;
-    text-decoration: none;
-    color: $button-color;
-    font-family: 'Times', sans-serif;
-    text-shadow: 0 0 0.125em hsl(0 0% 100% / .25), 0  0 .25em $button-color;
-}
-
-button::before {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    background: $button-color;
-    top: 120%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: perspective(2em) rotateX(40deg) scale(1, .35);
-    filter: blur(1.5em);
-    opacity: .6;
-    transition: opacity 0.4s ease;
-}
-
-button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 4em;
-    box-shadow: inset 0 0 .5em .5em $button-color, 0 0 .5em  .5em $button-color;
-    opacity: 0;
-}
-
-button:hover::after {
-    opacity: .5;
-    filter: blur(1em);
-}
-
-button:hover::before {
-    opacity: .8;
-}
-
-button:active::after {
-    opacity: .8;
-    filter: blur(1em);
-}
-
-button:active::before {
-    opacity: 1;
+    margin-bottom: 1.5rem;
+    a {
+        font-size: 1.85rem;
+        padding: .25em 1em;
+        text-decoration: none;
+        color: $button-color;
+        font-family: 'Times', sans-serif;
+        text-shadow: 0 0 .125em hsl(0 0% 100% / .25), 0  0 .25em $button-color;
+    }
+    &:hover {
+        box-shadow: inset 0 0 1.2em 0 $button-color, 0 0 1.2em 0 $button-color;
+    }
+    &:active {
+        box-shadow: inset 0 0 1.8em 0 $button-color, 0 0 1.8em 0 $button-color;
+    }
 }

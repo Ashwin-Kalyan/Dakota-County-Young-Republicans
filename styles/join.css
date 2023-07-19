@@ -8,8 +8,10 @@
 }
 
 .join-box {
-  width: 40vh;
-  height: 30vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +24,8 @@
           backdrop-filter: blur(15px);
   animation: transitionIn 2s;
   transition: transform 0.5s;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .now {
@@ -31,6 +35,8 @@
 h1 {
   font-family: "Times New Roman";
   color: #FFF;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @keyframes transitionIn {

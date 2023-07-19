@@ -1,5 +1,3 @@
-
-
 .faculty {
     height: 100vh;
     text-align: center;
@@ -26,11 +24,10 @@
     font-weight: 100;
     animation: transitionIn 2s;
     transition: transform .5s; 
-}
-
-.faculty-cards:hover {
-    cursor: pointer;
-    transform: translateY(-10%)
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-10%);
+    }
 }
 
 button a {
