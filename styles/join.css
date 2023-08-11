@@ -48,4 +48,11 @@ h1 {
     opacity: 1;
     transform: rotateX(0);
   }
+}
+
+@media (max-width: 580px) {
+  .join-box {
+    height: 20vh;
+    width: 20vh;
+  }
 }/*# sourceMappingURL=join.css.map */

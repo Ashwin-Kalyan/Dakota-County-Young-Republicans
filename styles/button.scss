@@ -1,11 +1,6 @@
 $button-color: hsl(347, 100%, 54%);
 $clear: rgba(0, 0, 0, .01);
 
-@mixin lightUp($opacity, $blur) {
-    opacity: $opacity;
-    filter: blur($blur);
-}
-
 button {
     display: inline-block;
     cursor: pointer;
