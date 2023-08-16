@@ -1,0 +1,12 @@
+$bg-color:	rgb(30, 30, 30);
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    background: $bg-color;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#DE0100, #b2004c);
+    border-radius: 10px;
+}
