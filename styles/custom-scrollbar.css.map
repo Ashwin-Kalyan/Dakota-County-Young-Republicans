@@ -1,1 +1,1 @@
-{"version":3,"sources":["custom-scrollbar.scss","custom-scrollbar.css"],"names":[],"mappings":"AAEA;EACI,WAAA;ACDJ;;ADGA;EACI,2BANO;ACMX;;ADEA;EACI,6CAAA;EACA,mBAAA;ACCJ","file":"custom-scrollbar.css"}
+{"version":3,"sources":["custom-scrollbar.scss","custom-scrollbar.css"],"names":[],"mappings":"AAKA;EACI,WAAA;ACJJ;;ADOA;EACI,2BAVO;ACMX;;ADOA;EACI,6CAbc;EAcd,mBAAA;ACJJ;ADKI;EACI,6CAfU;ACYlB;ADKI;EACI,6CAjBW;ACcnB","file":"custom-scrollbar.css"}

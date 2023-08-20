@@ -7,6 +7,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#DE0100, #b2004c);
+  background: linear-gradient(#DE0100, #9f0045);
   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#b90202, #940342);
+}
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(#a40101, #7e0238);
 }/*# sourceMappingURL=custom-scrollbar.css.map */

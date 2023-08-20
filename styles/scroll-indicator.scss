@@ -1,20 +1,23 @@
-.progress-container {
-    width: 100%;
-    height: 10px;
-    background: rgb(30, 30, 30);
+$indicator-color: linear-gradient(#DE0100, #b2004c);
+$indicator-bg: rgb(30, 30, 30);
+
+@mixin topSticky() {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
 }
 
-.progress-bar {
+.progress-container {
+    width: 100%;
     height: 10px;
-    border-radius: 10px;
-    background: linear-gradient(#DE0100, #b2004c);
-    width: 0%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
+    background: $indicator-bg;
+    @include topSticky();
+    .progress-bar {
+        height: 10px;
+        border-radius: 10px;
+        background: $indicator-color;
+        width: 0%;
+        @include topSticky();
+    }
 }

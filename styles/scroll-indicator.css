@@ -7,8 +7,7 @@
   left: 0;
   z-index: 999;
 }
-
-.progress-bar {
+.progress-container .progress-bar {
   height: 10px;
   border-radius: 10px;
   background: linear-gradient(#DE0100, #b2004c);
