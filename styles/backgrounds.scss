@@ -1,0 +1,23 @@
+@mixin fixedBg() {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home {
+    background-image: url("../img/home-bg.jpg");
+    @include fixedBg();
+}
+.join-page {
+    background-image: url("../img/join-bg.jpg");
+    @include fixedBg();
+}
+.about {
+    background-image: url("../img/about-bg.jpg");
+    @include fixedBg();
+}
+.contact {
+    background-image: url("../img/contact-bg.jpg");
+    @include fixedBg();
+}
